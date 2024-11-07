@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom left, #555555, #01274d);
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    position: relative;
+    width: 80%;
+    box-shadow:
+    0 -3em 3em rgba(0, 0, 0, 0.3),
+    0 0 15px 15px rgb(0, 0, 0, 0.3),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.top-panel {
+    color: white;
+    padding: 20px;
+}
+
+.top-panel h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.down-panel {
+    padding: 30px;
+}
+
+.down-panel h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+hr {
+    color: white;
+}
+
+h2 {
+    font-size: 25px
+}
+
+p {
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #002f5c;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+#required-fields {
+    color: red;
+    text-align: left;
+    font-size: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#registros {
+    font-size: 20px;
+    color: white
+    
+}

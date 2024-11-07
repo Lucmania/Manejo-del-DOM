@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de carga de personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-panel">
+            <ul id="required-fields">
+                <hr></br>
+                <h2><u><b>Datos obligatorios</b></u></h2>
+                <li>El campo Nombre es obligatorio</li>
+                <li>El campo Apellido es obligatorio</li>
+                <li>El Número de la Dirección debe ser Numérico</li>
+                <li>El Número de la Dirección no debe superar los 5 dígitos</li>
+                <li>El Número de Piso no debe superar los 2 dígitos</li>
+                <li>El Número de Departamento puede ser alfanumérico</li>
+                <li>El Número de Departamento es obligatorio si ha ingresado piso</li>
+                <li>Debe Seleccionar Ciudad</li>
+                <br>
+            </ul>
+        </div>
+        <div class="down-panel">
+            <hr></br>
+            <h1><u>REGISTRO</u></h1>
+            <form id="form-personal">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" maxlength="40" required>
+                <span class="error" id="error-nombre"></span>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" maxlength="40" required>
+                <span class="error" id="error-apellido"></span>
+
+                <label for="direccion">Dirección/Calle:</label>
+                <input type="text" id="direccion" maxlength="100" required>
+                <span class="error" id="error-direccion"></span>
+
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" maxlength="5" required>
+                <span class="error" id="error-numero"></span>
+
+                <label for="piso">Piso (Opcional):</label>
+                <input type="number" id="piso" maxlength="2">
+                <span class="error" id="error-piso"></span>
+
+                <label for="departamento">Departamento:</label>
+                <input type="text" id="departamento" maxlength="2">
+                <span class="error" id="error-departamento"></span>
+
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" required>
+                    <option value="">Seleccione Ciudad</option>
+                    <option value="Villa Maria">Villa Maria</option>
+                    <option value="Villa Nueva">Villa Nueva</option>
+                    <option value="Cordoba">Córdoba</option>
+                </select>
+                <span class="error" id="error-ciudad"></span>
+
+                <button id="guardar">Guardar</button>
+                <button id="listar" type="button">Listar</button>
+            </form>
+        </div>
+        <div class="registration-info">
+            <h1><u>Registros:</u></h1>
+            <div id="registros"></div>
+        </div>
+        <br>
+        <footer>
+            <p>A tener en cuenta:</p>
+            <p>*No se permiten números en Nombre, Apellido y dirección (el número de dirección debe colocarlo debajo).
+            </p>
+            <p>*No se permiten números negativos en el número de dirección ni tampoco en departamento.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
